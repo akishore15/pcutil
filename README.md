@@ -64,25 +64,45 @@ The built-in benchmarker sets the processor load to 100%. To prevent hard lockup
 
 ## 🚀 Quick Start & Compilation
 
-Clone the project repository and place `app.py` and the operating system's respective core engine file into the same directory before proceeding.
+Open your terminal or command-line interface (CLI), clone the specific repository branch for your operating system, and run the automated installation sequence.
 
-### For Windows Users
+### 🪟 For Windows Users (CMD / PowerShell)
 
-1. Install Python from [python.org](https://python.org) and ensure **"Add python.exe to PATH"** is checked.
-2. Put `app.py`, `core_engine.ps1`, and `build.bat` in one folder.
-3. Double-click **`build.bat`**.
-4. Once finished, navigate to the newly created `.\dist\` folder and execute **`PCUtil.exe`** (accept the Windows UAC permission prompt).
+Open a terminal (Command Prompt or PowerShell), download the Windows source directory, and run the automated compilation script. 
 
-### For Linux Users
+*Note: Ensure Python is installed and added to your system environment variables (`PATH`) before building.*
 
-Execute the automated `install.sh` deployment script with root rights to compile the source code, configure policy profiles, and create a system application menu launcher shortcut:
+```cmd
+:: 1. Clone the specific Windows repository tree
+git clone https://github.com --branch windows --single-branch pcutil_windows
+cd pcutil_windows
 
-```bash
-chmod +x install.sh
-sudo ./install.sh
+:: 2. Execute the automated build chain
+build.bat
+
+:: 3. Launch the compiled binary with elevated privileges
+dist\PCUtil.exe
 ```
 
-You can now locate and launch **PCUtil** directly from your desktop app manager panel.
+---
+
+### 🐧 For Linux Users (Terminal)
+
+Open your terminal emulator, clone the Linux source directory, give the installer execution rights, and deploy globally:
+
+```bash
+# 1. Clone the specific Linux repository tree
+git clone https://github.com --branch linux --single-branch pcutil_linux
+cd pcutil_linux
+
+# 2. Mark the deployment script as executable and run it
+chmod +x install.sh
+sudo ./install.sh
+
+# 3. Launch the platform globally from anywhere in your shell
+pcutil
+```
+
 
 ---
 
