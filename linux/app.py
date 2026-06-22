@@ -33,8 +33,9 @@ class BashWorker(QThread):
 class UniversalCpuApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Universal Hardware Tuner & Optimizer")
+        self.setWindowTitle("PCUtil - Hardware Master") # Updated name
         self.setMinimumSize(900, 550)
+
 
         # Apply Gamer/RyzenMaster styling theme rules
         self.setStyleSheet("""
