@@ -64,18 +64,18 @@ The built-in benchmarker sets the processor load to 100%. To prevent hard lockup
 
 ## 🚀 Quick Start & Compilation
 
-Open your terminal or command-line interface (CLI), clone the specific repository branch for your operating system, and run the automated installation sequence.
+Open your terminal or command-line interface (CLI), clone the specific repository branch for your operating system, navigate into its source folder, and run the automated installation sequence.
 
 ### 🪟 For Windows Users (CMD / PowerShell)
 
-Open a terminal (Command Prompt or PowerShell), download the Windows source directory, and run the automated compilation script. 
+Open a terminal (Command Prompt or PowerShell), download the `windows` branch, navigate into the `windows` folder, and run the automated compilation script. 
 
 *Note: Ensure Python is installed and added to your system environment variables (`PATH`) before building.*
 
 ```cmd
-:: 1. Clone the specific Windows repository tree
+:: 1. Clone the windows branch
 git clone https://github.com --branch windows --single-branch pcutil_windows
-cd pcutil_windows
+cd pcutil_windows\windows
 
 :: 2. Execute the automated build chain
 build.bat
@@ -88,12 +88,12 @@ dist\PCUtil.exe
 
 ### 🐧 For Linux Users (Terminal)
 
-Open your terminal emulator, clone the Linux source directory, give the installer execution rights, and deploy globally:
+Open your terminal emulator, download the `linux` branch, navigate into the `linux` folder, give the installer execution rights, and deploy globally:
 
 ```bash
-# 1. Clone the specific Linux repository tree
+# 1. Clone the linux branch and enter the source directory
 git clone https://github.com --branch linux --single-branch pcutil_linux
-cd pcutil_linux
+cd pcutil_linux/linux
 
 # 2. Mark the deployment script as executable and run it
 chmod +x install.sh
@@ -102,6 +102,7 @@ sudo ./install.sh
 # 3. Launch the platform globally from anywhere in your shell
 pcutil
 ```
+
 
 
 ---
