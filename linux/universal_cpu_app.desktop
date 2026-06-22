@@ -1,12 +1,12 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Universal CPU Master
+Name=PCUtil
 Comment=Overclocking, specs, benchmarking, and driver updates
-# pkexec acts as a graphical 'sudo' prompt for system apps
-Exec=pkexec /usr/local/bin/universal-cpu-app
+Exec=pkexec /usr/local/bin/pcutil
 Icon=processor
 Terminal=false
 Categories=System;Settings;HardwareSettings;
-Keywords=cpu;overclock;benchmark;tuner;amd;intel;
+Keywords=cpu;overclock;benchmark;tuner;amd;intel;pcutil;
 StartupNotify=true
+
